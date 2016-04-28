@@ -150,6 +150,9 @@
 		    margin:28px;
 		    float: left;
 		}
+		.blog-thumb-contain img{
+			width:100%;
+		}
 		.blog-section{
 			float:left;
 			padding-top:120px;
@@ -240,18 +243,35 @@
 			float:right;
 			color:#20B33B;
 		}
+		address {
+		    font-style: normal;
+		}
 @media only screen and (max-width:1024px){
 		.main-header {
 		    background: url(images/main-banner-bg2.jpg) no-repeat -448px 0px;
 		}
+		header nav {
+	    max-width: 71%;
+
+	}
+		.blog-card {
+		    float: left;
+		    padding-left: 8%;
+		}
 		.blog-card-container {
-		    width: 24%;
-		    margin: 4px;
+		    width: 40%;
+		    margin-right: 2%;
 		 }
 }
+@media only screen and (max-width:859px){
+		header nav {
+	    max-width: 99%;
+
+	}
 @media only screen and (max-width:640px){
 		header nav {
     		max-width: 99%;
+    		margin:0 auto;
 		}
 		.main-header{
 			background: url(images/main-banner-bg2.jpg) no-repeat -654px 0px;
@@ -270,13 +290,19 @@
     		margin: 11px;
 		}
 }
+@media only screen and (max-width:595px){
+		.about-container img{
+			width:100%;
+		}
+
+}
 @media only screen and (max-width:360px){
-			.main-header{
+		.main-header{
 			background: url(images/main-banner-bg2.jpg) no-repeat -810px 0px;
 		}
-			.arrowcod{
-				display:none;
-			}
+		.arrowcod{
+			display:none;
+		}
 		h1 {
     		font-size: 33px;
     	}
@@ -308,6 +334,35 @@
 		}
 
 }
+@media only screen and (max-width:480px){
+		.main-header {
+    		background: url(images/main-banner-bg2.jpg) no-repeat -733px 0px;
+		}
+		header nav {
+		    max-width: 82%;
+		}
+		.internal-link{
+			display:none;
+		}
+		.about-us .about-container img{
+			width:100%;
+		}
+		.blog-card-container {
+		    width: 85%;
+		}
+		.blog-thumb-contain img{
+			width:100%;
+		}
+		.external-link{
+			display:none;
+		}
+		.conact-detail {
+		    width: 65%;
+		}
+		
+
+
+} 
 		
 
 		</style>
@@ -319,7 +374,7 @@
 			<div class="header-top">
 			<div class="gen-wrap">
 			<nav>
-				<ul><li>INTERNAL PAGES LINKS &nbsp; &nbsp; &nbsp; &nbsp;<span class="arrowcod"> &#8594;</span></li>
+				<ul><li class="internal-link">INTERNAL PAGES LINKS &nbsp; &nbsp; &nbsp; &nbsp;<span class="arrowcod"> &#8594;</span></li>
 					<li><a href="#header">HOME</a></li>
 					<li><a href="#about">ABOUT US</a></li>
 					<li><a href="#blog" title="You can find relative link in this blog section">BLOG</a></li>
@@ -384,7 +439,6 @@
 							<div class="blog-thumb-contain"><img src="images/blog-img.jpg"></div>
 							<div class="blog-paragraph"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.<a href="blog/index.html"><span>Relative link &#8594; More... </span></a> </p></div>
 						</div>
-
 					</div>
 
 					
@@ -395,21 +449,22 @@
 			<div class="contact-wrap">
 			<div class="gen-wrap">
 		<footer class="contact-us" id="contact">
+			<address>
 				<div class="about-container">
 					<div class="section-heading">
-					<h2>CONTACT US</h2>
-					<div class="section-heading-underline"></div>
+						<h2>CONTACT US</h2>
+						<div class="section-heading-underline"></div>
 					</div>
 					<div class="conact-detail">
-					<ul>
-						<li><a href="skype:creater22"><span class="skype"></span> Muhamamd Asif</a> <span class="external-link">&#8592; External link</span></li>
-						<li><a href="tel:00923453543604"><span class="call"></span> 00 92 345 3543604</a><span class="external-link">&#8592; External link</span></li>
-						<li><a href="mailto:creatershaikh60@gmail.com"><span class="email"></span> creatershaikh60@gmail.com</a><span class="external-link">&#8592; External link</span></li>
-						<li><a href="https://www.behance.net/M_A_G_D"><span class="behance"></span> https://www.behance.net/M_A_G_D</a><span class="external-link">&#8592; External link</span></li>
-					</ul>
+						<ul>
+							<li><a href="skype:creater22"><span class="skype"></span> Muhamamd Asif</a> <span class="external-link">&#8592; External link</span></li>
+							<li><a href="tel:00923453543604"><span class="call"></span> 00 92 345 3543604</a><span class="external-link">&#8592; External link</span></li>
+							<li><a href="mailto:creatershaikh60@gmail.com"><span class="email"></span> creatershaikh60@gmail.com</a><span class="external-link">&#8592; External link</span></li>
+							<li><a href="https://www.behance.net/M_A_G_D"><span class="behance"></span> https://www.behance.net/M_A_G_D</a><span class="external-link">&#8592; External link</span></li>
+						</ul>
 					</div>
 				</div>
-			
+			</address>
 		</footer>
 			</div>
 			</div>
